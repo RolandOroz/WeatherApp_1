@@ -13,9 +13,9 @@ export class AppComponent implements OnInit, OnChanges{
 
   weatherData?: any;
   cityName: string = 'Kranj';
-
   ngOnInit():void {
-    this.ngOnChanges(this.weatherData);
+    this.getWeatherData(this.cityName);
+    this.cityName = '';
   }
 
   onSubmit() {
