@@ -1,7 +1,8 @@
 <div class="container" *ngIf="weatherData">
   <div class="container-header">
-    <img *ngIf="weatherData.current.temp_c > 15" src="{{weatherData.current.condition.icon}}" alt="hot"/>
-    <img *ngIf="weatherData.current.temp_c <= 15" src="assets/txz0bM-1358079906" alt="cold"/>
+    <img class="weather-icon" src="{{weatherData.current.condition.icon}}" alt="api icon">
+    <img class="warm" *ngIf="weatherData.current.temp_c > 15" src="assets/sunset-hammock-relaxation-bali-asia-indonesia-sun-water-concerns-relax-rock-cozy-rest-heat-nice-weather-evening-sky-clouds-weather-warm-beautiful-romantic-lighting-mood-light-fa" alt="hot"/>
+    <img class="cold" *ngIf="weatherData.current.temp_c <= 15" src="assets/txz0bM-1358079906" alt="cold"/>
     <div class="weather-data">
       <div class="location">{{weatherData.location.name}}</div>
       <div class="temperature">{{ weatherData.current.temp_c | number: '0.0-0'}}°C</div>

@@ -42,7 +42,23 @@ body {
   border-top-right-radius: 20px;
 }
 
-.container-header img {
+.container-header .weather-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 40%;
+  z-index: 1;
+}
+
+.container-header .cold {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.container-header .warm {
   position: absolute;
   top: 0;
   left: 0;
@@ -75,20 +91,23 @@ body {
   }
 
 .location {
-  color: var(--white);
+  color: var(--yellow-1);
+  padding-top: 1em;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 2.2em;
+  font-weight: 900;
 }
 
 .temperature {
   color: var(--white);
-  font-size: 4em;
+  font-size: 3em;
   text-align: center;
   font-weight: 900;
 }
 
 .more-info-label {
-  color: var(--white);
+  color: var(--yellow-1);
+  text-align: center;
 }
 
 .more-info-container {
