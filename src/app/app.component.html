@@ -1,3 +1,9 @@
+<div class="search-city">
+  <form #form="ngForm" (submit)="onSubmit()">
+    <input type="text" placeholder="City Name" name="city" [(ngModel)]="cityName">
+  </form>
+</div>
+
 <div class="container" *ngIf="weatherData">
   <div class="container-header">
     <img class="weather-icon" src="{{weatherData.current.condition.icon}}" alt="api icon">
@@ -6,6 +12,7 @@
     <div class="weather-data">
       <div class="location">{{weatherData.location.name}}</div>
       <div class="temperature">{{ weatherData.current.temp_c | number: '1.0-0'}}°C</div>
+      <div class="region-country">{{weatherData.location.region}}, {{weatherData.location.country}}</div>
     </div>
   </div>
   <div class="container-body">

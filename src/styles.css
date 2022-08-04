@@ -51,6 +51,15 @@ body {
   z-index: 1;
 }
 
+.condition {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 12;
+  font-weight: 900;
+  color: var(--blue-2);
+}
+
 .container-header .cold {
   position: absolute;
   top: 0;
@@ -96,6 +105,12 @@ body {
   text-align: center;
   font-size: 2.2em;
   font-weight: 900;
+}
+
+.region-country {
+  color: var(--white);
+  text-align: center;
+  font-size: 1em;
 }
 
 .temperature {
@@ -150,4 +165,20 @@ body {
   justify-content: flex-start;
   align-items: center;
   color: var(--white);
+}
+
+.search-city {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.search-city input {
+  background-color: var(--shadow-light);
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 1em;
+  color: var(--yellow-1);
+  font-size: 0.8em;
+  text-align: center;
 }
